@@ -1,6 +1,5 @@
 def orden_lib():
     x = True
-    año = 10000000000000
     e = 0
     libros_ordenados_por_año= ["","","","","","","","","",""]
     with open(libros_file, "r", encoding="utf-8") as f:
@@ -23,3 +22,8 @@ def orden_lib():
                             x = False
                 libros_ordenados_por_año[posicion] = i
             e = e + 1
+    
+    print("--- Libros ordenados por año asc ---")
+    print(lista_libros[0])
+    for i in libros_ordenados_por_año:
+        print(i)
